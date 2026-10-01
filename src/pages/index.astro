@@ -1,0 +1,273 @@
+---
+import '../styles/global.css';
+
+const expertise = [
+  {
+    area: 'Full-stack development',
+    skills: 'C# · .NET · ASP.NET Core · Python · TypeScript · React · Angular',
+  },
+  {
+    area: 'AI & applied LLMs',
+    skills: 'RAG · LLM applications · chatbots · transcription · Azure AI · Azure AI Search · Vertex AI',
+  },
+  {
+    area: 'Cloud & architecture',
+    skills: 'Azure · REST APIs · Azure Service Bus · integrations · authentication · event-driven systems',
+  },
+  {
+    area: 'Infrastructure & delivery',
+    skills: 'Terraform · Bicep · Docker · Kubernetes · GKE · GKS · Azure DevOps · GitHub Actions · Octopus Deploy · CI/CD',
+  },
+  {
+    area: 'Data & quality',
+    skills: 'SQL · Qdrant · Neo4j · NUnit · Moq · TDD · OpenTelemetry',
+  },
+  {
+    area: 'Ways of working',
+    skills: 'Technical design · requirements analysis · prototyping · stakeholder collaboration',
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Niklas Palm is a senior full-stack developer and AI engineer building reliable software and AI-enabled solutions."
+    />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>Niklas Palm — Senior Fullstack Developer & AI Engineer</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-shell header-inner">
+        <a class="brand" href="#top">Niklas Palm</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#expertise">Expertise</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero page-shell" aria-labelledby="hero-title">
+        <div class="hero-intro">
+          <p class="hero-kicker eyebrow">Senior Fullstack Developer <span>·</span> AI Engineer</p>
+          <h1 class="hero-title" id="hero-title">
+            Building what<br />
+            <span>moves business forward.</span>
+          </h1>
+          <div class="hero-bottom">
+            <p class="hero-description">
+              I’m Niklas, a full-stack developer with six years’ experience building
+              business-critical software and turning emerging AI ideas into working
+              solutions.
+            </p>
+            <a class="text-link" href="#experience">
+              Explore my experience <span aria-hidden="true">↘</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-meta" aria-label="Professional focus">
+          <span>Stockholm, Sweden</span>
+          <span>Financial services · Cloud · AI</span>
+          <a href="https://www.rocket.se" target="_blank" rel="noreferrer">Rocket <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section
+        class="experience-section page-shell section-rule"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow section-index">01 / Projects & assignments</p>
+          <h2 id="experience-title">Experience that matters.</h2>
+        </div>
+
+        <article class="experience-item">
+          <div class="experience-date">2023 — 2026</div>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <div>
+                <h3>SPP</h3>
+                <p class="experience-role">System Developer / AI Engineer</p>
+              </div>
+              <span class="experience-sector">Pensions · Insurance</span>
+            </div>
+            <p>
+              Develops modern pension and insurance solutions with C#, .NET, ASP.NET
+              Core, React and Azure. Contributes to cloud migrations from on-premise
+              systems, REST APIs and external integrations, as well as event-driven
+              services using Azure Service Bus. Works with automated testing, TDD and
+              CI/CD in cloud-based environments.
+            </p>
+            <p>
+              As part of an innovation team, identifies business needs, designs
+              solutions and builds AI prototypes from concept to working implementation.
+              Recent work includes RAG systems, chatbots, transcription and
+              LLM-integrated tools using Python, Azure AI, Azure AI Search, Vertex AI,
+              Qdrant and Neo4j.
+            </p>
+            <ul class="tag-list" aria-label="SPP technologies">
+              <li>.NET & C#</li>
+              <li>React</li>
+              <li>Azure</li>
+              <li>Python & AI</li>
+              <li>RAG & LLMs</li>
+              <li>Qdrant</li>
+              <li>Neo4j</li>
+              <li>Kubernetes</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-date">2020 — 2023</div>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <div>
+                <h3>Handelsbanken</h3>
+                <p class="experience-role">System Developer</p>
+              </div>
+              <span class="experience-sector">Banking · Risk reporting</span>
+            </div>
+            <p>
+              Maintained and further developed internal .NET systems for regulatory
+              risk reporting, including capital adequacy and resolution. Worked
+              closely with business teams to improve reporting flows, data processing
+              and user interfaces, with a focus on quality, traceability and
+              reliability.
+            </p>
+            <ul class="tag-list" aria-label="Handelsbanken technologies">
+              <li>.NET</li>
+              <li>ASP.NET</li>
+              <li>Angular</li>
+              <li>SQL</li>
+              <li>Azure DevOps</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="expertise-section page-shell section-rule"
+        id="expertise"
+        aria-labelledby="expertise-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow section-index">02 / Key expertise</p>
+          <h2 id="expertise-title">A strong foundation.<br />An expanding edge.</h2>
+        </div>
+        <div class="expertise-list">
+          {
+            expertise.map((item, index) => (
+              <article class="expertise-item">
+                <span class="expertise-number">{String(index + 1).padStart(2, '0')}</span>
+                <h3>{item.area}</h3>
+                <p>{item.skills}</p>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="about-section page-shell section-rule" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow section-index">03 / A little about me</p>
+          <h2 id="about-title">Engineering with context.</h2>
+        </div>
+        <div class="about-body">
+          <figure class="about-portrait">
+            <img
+              src="https://github.com/user-attachments/assets/b6e18017-95ed-4e7e-aa1c-6c6e29e760b7"
+              alt="Black-and-white portrait of Niklas Palm"
+              width="1122"
+              height="1402"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div class="about-copy">
+            <p>
+              I build software for complex, highly regulated environments—and help
+              teams explore what AI can make possible.
+            </p>
+            <p>
+              My experience spans banking, pensions and insurance: from modernizing
+              legacy applications and moving on-premise systems to Azure, to creating
+              cloud services, integrations and secure authentication flows.
+            </p>
+            <p>
+              I work closely with stakeholders to turn business needs into
+              maintainable solutions. In innovation work, I take ideas from early
+              exploration through technical design and into working prototypes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="education-section page-shell section-rule"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow section-index">04 / Education</p>
+          <h2 id="education-title">A mix of technology & business.</h2>
+        </div>
+        <article class="education-item">
+          <span class="education-date">2019 — 2021</span>
+          <div>
+            <h3>IT-Högskolan</h3>
+            <p class="education-degree">Higher Vocational Education · Java & Software Development</p>
+            <p>
+              Studies in Java programming, object-oriented development and agile
+              methods, combining theory with practical experience through an internship.
+            </p>
+          </div>
+        </article>
+        <article class="education-item">
+          <span class="education-date">2016 — 2020</span>
+          <div>
+            <h3>Stockholm University</h3>
+            <p class="education-degree">Bachelor’s degree · Business Administration</p>
+            <p>
+              Business and economics studies, including an exchange year in Economics
+              at the Australian National University in Canberra.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact-section page-shell section-rule" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow section-index">05 / Get in touch</p>
+          <h2 id="contact-title">Have a good<br />challenge in mind?</h2>
+        </div>
+        <div class="contact-links">
+          <a class="text-link" href="mailto:Niklas.palm@rocket.se">
+            Niklas.palm@rocket.se <span aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-website" href="https://www.rocket.se" target="_blank" rel="noreferrer">
+            www.rocket.se <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-shell">
+      <nav class="footer-social" aria-label="Social links">
+        <a class="nav-link" href="https://www.linkedin.com/in/niklas-palm-053671139">LinkedIn</a>
+        <a class="nav-link" href="https://github.com/PalmNiklasSE">GitHub</a>
+      </nav>
+      <a class="nav-link" href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
