@@ -4,19 +4,19 @@ import '../styles/global.css';
 const expertise = [
   {
     area: 'Full-stack development',
-    skills: 'C# · .NET · ASP.NET Core · Python · TypeScript · React · Angular · SQL',
+    skills: 'C# · .NET · ASP.NET Core · Python · TypeScript · React · Angular',
   },
   {
     area: 'AI & applied LLMs',
-    skills: 'RAG · LLM applications · chatbots · transcription · Azure AI · Vertex AI',
+    skills: 'RAG · LLM applications · chatbots · transcription · Azure AI · Azure AI Search · Vertex AI',
   },
   {
     area: 'Cloud & architecture',
-    skills: 'Azure · REST APIs · Azure Service Bus · integrations · event-driven systems',
+    skills: 'Azure · REST APIs · Azure Service Bus · integrations · authentication · event-driven systems',
   },
   {
     area: 'Infrastructure & delivery',
-    skills: 'Terraform · Bicep · Docker · Kubernetes · GKE · GKS · CI/CD',
+    skills: 'Terraform · Bicep · Docker · Kubernetes · GKE · GKS · Azure DevOps · GitHub Actions · Octopus Deploy · CI/CD',
   },
   {
     area: 'Data & quality',
@@ -25,25 +25,6 @@ const expertise = [
   {
     area: 'Ways of working',
     skills: 'Technical design · requirements analysis · prototyping · stakeholder collaboration',
-  },
-];
-
-const technologies = [
-  {
-    group: 'Application development',
-    items: '.NET · ASP.NET Core · C# · React · Angular · TypeScript · Python · REST APIs',
-  },
-  {
-    group: 'AI & data',
-    items: 'RAG · Azure AI · Azure AI Search · Vertex AI · Qdrant · Neo4j · SQL',
-  },
-  {
-    group: 'Cloud & delivery',
-    items: 'Azure · Azure DevOps · GitHub Actions · Octopus Deploy · Docker · Kubernetes · GKE · GKS',
-  },
-  {
-    group: 'Engineering practices',
-    items: 'Terraform · Bicep · Azure Service Bus · NUnit · Moq · TDD · OpenTelemetry',
   },
 ];
 ---
@@ -194,19 +175,6 @@ const technologies = [
               </article>
             ))
           }
-        </div>
-        <div class="stack-block">
-          <p class="eyebrow section-index">Tools of the trade</p>
-          <div class="stack-list">
-            {
-              technologies.map((item) => (
-                <div class="stack-item">
-                  <h3>{item.group}</h3>
-                  <p>{item.items}</p>
-                </div>
-              ))
-            }
-          </div>
         </div>
       </section>
 
